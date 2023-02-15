@@ -355,13 +355,13 @@ button {
   background-color: var(--standart-white);
   justify-content: center;
   align-items: center;
-  transition: border-color var(--duration), outline var(--duration);
+  transition: border-color var(--duration);
+  outline: none;
 }
 
 .customers-menu .customers-menu-link:hover,
 .customers-menu .customers-menu-link:focus {
   border-color: var(--pressed-state);
-  outline: none;
 }
 
 .customers-icon {
@@ -480,6 +480,7 @@ button {
 
 .portfolio-menu-item {
   background-color: var(--standart-white);
+  transition: box-shadow var(--duration);
 }
 
 
@@ -489,12 +490,11 @@ button {
   padding-left: 16px;
   border: 1px solid var(--accent);
   border-top: none;
-  transition: box-shadow var(--duration);
 }
 
 
-.portfolio-card-text:hover,
-.portfolio-card-text:focus {
+.portfolio-menu-item:hover,
+.portfolio-menu-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -544,7 +544,7 @@ button {
 .modal {
   position: absolute;
   width: 408px;
-  min-height: 576px;
+  height: 576px;
   left: 516px;
   top: 50%;
   left: 50%;
@@ -562,6 +562,9 @@ button {
 
 .modal-button {
   display: flex;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -569,7 +572,6 @@ button {
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: auto;
   
 }
 
