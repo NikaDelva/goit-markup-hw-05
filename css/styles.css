@@ -153,7 +153,6 @@ button {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--dark-theme);
-  margin-left: auto;
   transition: color var(--duration);
 }
 
@@ -292,8 +291,8 @@ button {
 
 .social-link {
   display: flex;
-  width: 44px;
-  height: 44px;
+  width: 40px;
+  height: 40px;
   background-color: var(--brand-color);
   border-radius: 50%;
   justify-content: center;
